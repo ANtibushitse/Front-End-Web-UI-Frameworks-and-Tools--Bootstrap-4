@@ -8,16 +8,26 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
-  "author": "",
+  "author": "Ntibushitse Arsene",
   "license": "ISC",
   "devDependencies": {
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
-  }
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANtibushitse/Front-End-Web-UI-Frameworks-and-Tools--Bootstrap-4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ANtibushitse/Front-End-Web-UI-Frameworks-and-Tools--Bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/ANtibushitse/Front-End-Web-UI-Frameworks-and-Tools--Bootstrap-4#readme"
 }

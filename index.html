@@ -34,7 +34,9 @@
             
         </div>
     </nav>
-    <!--  -->
+    <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialogue modal-lg"></div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -47,16 +49,17 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="/img/logo.png"class="img-fluid">
                 </div>
-                <div class ="col-12 col-md align-self-center"><a href="#reservationForm"
-                    data-toggle="tooltip" data-html="tue"
-                    title="Or Call ust at"<br> <strong> +852123456789</strong>
-                        data-placement= "bottom"><input class="btn btn-warning btn-block" 
-                    type="submit" value="Reserve a table"></a></div></a></div> 
-            </div>
+                <div class ="col-12 col-md align-self-center">
+                    <a role="button" class="btn btn-block nav-link btn-warning"
+                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                        data-placement="bottom" href="#reserveform">Reserve Table</a>
+                </div>
+       
+    </header>
         </div>
     </header>
-<!--Carousel  -->
-      <div class="container">
+
+      <div class="container"> 
         <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -110,21 +113,11 @@
             </div>
         </div>
     </div>
-    <!-- Promotions -->
-    <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col-sm col-md">
-                <h2>Weekend Grand Buffet<span class="badge badge-danger">HOT</span> </h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads,
-                    six enticing appetizers,
-                    six main entrees and five choicest desserts. 
-                    Free flowing bubbly and soft drinks. All for just $19.99 per person </p>   
-            </div>
-            <img src="/img/buffet.png" alt="buffet"></div>
-        </div>
+       <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+        </ol>
 <!-- culinary specialists -->
 <div class="container">
 
@@ -251,8 +244,13 @@
     </footer>
     <!-- jQuery first,, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>
 
