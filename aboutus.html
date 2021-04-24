@@ -9,7 +9,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
@@ -154,63 +153,7 @@
 </div>
     <!-- Form - assignmet 2 task 1 
     -->
-    <div id="reservationForm" class="row row-content align-items-center" >
-        <div class="col-12 offset-0 col-md-8 offset-md-2">
-            <div class="card">
-                <h3 class="btn-bl bg-warning text-white">Reserve a table</h3>
-                <div class="card-block">
-                    <form>
-                        <div class="form-group row">
-                            <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
-                            <div class="col-md-10">
-                                <div class="btn-group" data-toggle="buttons">
-                                    <label class="btn">
-                                        <input type="radio" name="nbPeople" value="1">1
-                                    </label>
-                                    <label class="btn">
-                                        <input type="radio" name="nbPeople" value="2"> 2
-                                    </label>
-                                    <label class="btn">
-                                        <input type="radio" name="nbPeople" value="3"> 3
-                                    </label>
 
-                                    <label class="btn">
-                                        <input type="radio" name="nbPeople" value="4"> 4
-                                    </label>
-                                    <label class="btn">
-                                        <input type="radio" name="nbPeople" value="5"> 5
-                                    </label>
-                                    <label class="btn">
-                                        <input type="radio" name="nbPeople" value="6"> 6
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastname" class="col-md-2 col-form-label">Date and Time</label>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon"></span>
-                                    <input class="form-control" name="dateBooking" placeholder="Date">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon"></span>
-                                    <input class="form-control"name="hourBooking" placeholder="Time">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">Reserve</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-         </div>
-    </div>
 <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -230,19 +173,20 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
                 <div class="col col-sm-4 align-self-center">
-                    <div style="text-align:center">
-                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i>
-                            <a class ="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/"><i class="fa fa-linkdin"></i></a>
-                            <a class ="btn btn-social-icon btn-facebook"href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                            <a clas="btn btn-social-icon btn-twitter"  href="http://twitter.com/"> <i class="fa fa-twitter"></i></a>
-                            <a class ="btn btn-social-icon btn-youtube"href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
@@ -255,7 +199,7 @@
     </footer>
     <!-- jQuery first,, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
