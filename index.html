@@ -152,8 +152,8 @@
                         class="form-check-input"
                         type="radio"
                         name="inlineRadioOptions"
-                        id="inlineRadio5"
-                        value="option5"
+                        id="inlineRadio6"
+                        value="option6"
                       />
                       <label class="form-check-label" for="inlineRadio1">6</label>
                     </div>
@@ -380,5 +380,17 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#mycarousel").carousel({interval: 2000});
+        $("#carousel-pause").click(function () {
+          $("#mycarousel").carousel("pause");
+        });
+        $("#carousel-play").click(function () {
+          $("#mycarousel").carousel("cycle");
+        });
+      });
+    </script>
   </body>
 </html>
