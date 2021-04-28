@@ -81,7 +81,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Reserve a Table</h4>
-            <button type="button" class="close">&times;</button>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
             <form class="form-inline">
@@ -168,7 +168,7 @@
             <img src="img/logo.png" class="img-fluid" />
           </div>
           <div class="col-12 col-sm align-self-center">
-            <a type="button" class="btn btn-warning btn-sm btn-block">Reserve Table</a>
+            <a id="reserveBtn" type="button" class="btn btn-warning btn-sm btn-block">Reserve Table</a>
           </div>
         </div>
       </div>
@@ -334,7 +334,10 @@
           }
         });
         $("#btnLogin").click(function () {
-          $("#loginModal").modal("show");
+          $("#loginModal").modal("toggle");
+        });
+        $("#reserveBtn").click(function () {
+          $("#reserveModal").modal("show");
         });
       });
     </script>
