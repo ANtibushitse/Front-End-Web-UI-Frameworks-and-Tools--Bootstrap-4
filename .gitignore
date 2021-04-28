@@ -1,3 +1,4 @@
 node_modules
 node_modules
 .vst code/settings
+.DS_Store
