@@ -33,7 +33,20 @@ module.exports = function (grunt) {
         },
       },
     },
+    copy: {
+      html: {
+        files: [
+          {
+            expand: true,
+            cwd: "./",
+            src: ["*.html"],
+            dest: "dist ",
+          },
+        ],
+      },
+    },
   });
 
   grunt.registerTask("css", ["sass"]);
+  grunt.registerTask("default,"[("browserSync", "watch")]);
 };
