@@ -1,5 +1,5 @@
 "use strict";
-
+const sass = require("node-sass");
 module.exports = function (grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require("time-grunt")(grunt);
@@ -14,6 +14,10 @@ module.exports = function (grunt) {
         files: {
           "css/styles.css": "css/styles.scss",
         },
+      },
+      options: {
+        implementation: sass,
+        sourceMap: true,
       },
     },
   });
