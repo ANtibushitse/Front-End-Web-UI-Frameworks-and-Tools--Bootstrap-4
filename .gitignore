@@ -1,3 +1,5 @@
+.vscode
+.idea
 node_modules
 .vst code/settings
 .DS_Store
